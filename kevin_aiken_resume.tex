@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/kevinaiken}{\Large Kevin Aiken}} & Email : \href{mailto:aiken.kevin.m@gmail.com}{aiken.kevin.m@gmail.com}\\
+  \href{https://github.com/kevinaiken}{https://github.com/kevinaiken} & Mobile : +1-770-773-6538 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia State University}{Atlanta, GA}
+      {Bachelor of Science in Computer Science;  GPA: 3.6}{Aug. 2016 -- May. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {NCR}{Atlanta, GA}
+      {Software Engineer}{July 2019 - Present}
+      \resumeItemListStart
+      \resumeItem{Technical Leadership}
+        {Led a team of software engineers and quality engineers, planning our roadmap and executing on it, while also growing junior members of the team.}
+      \resumeItem{Vagrant}
+        {Significantly updated our Vagrant and SaltStack based virtualization infrastructure to generate virtual labs more effectively.}
+      \resumeItem{Python Integration Testing}
+        {Designed and implemented a Python Integration testing framework to orchestrate complex system tests on distributed systems.}
+      \resumeItem{Task Automation}
+        {Maintained and improved several Python based utilities designed to automate previously manual tasks, such as re-imaging labs.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {OttoDock}{Dawsonville, GA}
+      {Software Engineer}{Oct. 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Product Development}
+          {Worked with a multidisciplinary group of engineers to design a concept for autonomous lake docks that self position and provide a variety of smart features, and then iterated through several prototypes. Currently we have a handful of beta docks in the water at Lake Lanier.}
+        \resumeItem{Backend}
+          {Developed the Kotlin+Spring backend from the ground up. It currently consists of many API's for CRUD operations, websockets for live video and data streaming, and a variety of scheduled tasks.}
+        \resumeItem{Infrastructure}
+          {Implemented and refined our approach to cloud infrastructure on AWS following best practices, including fully implemented CI/CD.}
+        \resumeItem{Security}
+          {Researched and implemented our security approach, following best practices to implement user login, password reset, and authentication on both API's and websocket connections.}
+        \resumeItem{Project Management}
+          {Helped scale our approach to work as we grew larger, using Github projects and Agile concepts to build our product more effectively.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {T-Mobile}{Dunwoody, GA}
+      {Software Engineering Intern}{June 2018 - May 2019}
+      \resumeItemListStart
+        \resumeItem{Full Stack Development}
+          {Developed several full stack applications using Angular and Java Spring to demonstrate concepts.}
+        \resumeItem{Backend Mocking}
+          {Virtualized a financial backend service to simulate partial system outages so that the behavior of our application could be thoroughly validated.}
+        \resumeItem{Kubernetes Prototyping}
+          {Prototyped a proof of concept to run a document signing application on Kubernetes to increase the performance and robustness of the application. }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{MarkIt}
+      {Hackathon project using web NFC to to implement checkout-less shopping}
+    \resumeSubItem{IoT Physical Therapy}
+      {Worked with a professor in Georgia State's Physical Therapy Department to provide them a specifically tailored Android application for conducting physical therapy on participants using Myo EMG bands.}
+    \resumeSubItem{Undergraduate Research}
+      {Prototyped an automated personnel tracking solution using both passive bluetooth sampling and streaming cloud computer vision.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Kotlin, Python, Java, SQL}
+      \hfill
+      \textbf{Technologies}{: AWS, Linux, Vagrant, SaltStack, Jenkins, Spring}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
