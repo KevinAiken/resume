@@ -1,4 +1,4 @@
-This is the source code and output of my resume. Originally forked from 
+This is the source code and output of my resume. Originally forked from https://github.com/sb2nov/resume.
 
 ### Build using Docker
 
